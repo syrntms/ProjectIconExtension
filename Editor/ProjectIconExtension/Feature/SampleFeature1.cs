@@ -10,7 +10,10 @@ public class SampleFeature1 : IProjectIconExtensionFeature {
 	static SampleFeature1()
 	{
 		ProjectIconExtension.AddExtension(new SampleFeature1());
-		iconTexture = AssetDatabase.LoadAssetAtPath("Assets/Editor/ProjectIconExtension/Feature/Bob.png", typeof(Texture2D)) as Texture2D;
+		iconTexture = AssetDatabase.LoadAssetAtPath(
+			"Assets/ProjectIconExtension/Editor/ProjectIconExtension/Feature/Bob.png",
+			typeof(Texture2D)
+		) as Texture2D;
 	}
 
 

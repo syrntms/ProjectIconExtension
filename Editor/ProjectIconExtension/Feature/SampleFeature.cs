@@ -10,7 +10,10 @@ public class SampleFeature : IProjectIconExtensionFeature {
 	static SampleFeature()
 	{
 		ProjectIconExtension.AddExtension(new SampleFeature());
-		iconTexture = AssetDatabase.LoadAssetAtPath("Assets/Editor/ProjectIconExtension/Feature/Alice.png", typeof(Texture2D)) as Texture2D;
+		iconTexture = AssetDatabase.LoadAssetAtPath(
+			"Assets/ProjectIconExtension/Editor/ProjectIconExtension/Feature/Alice.png",
+			typeof(Texture2D)
+		) as Texture2D;
 	}
 
 	public int GetPriority ()
